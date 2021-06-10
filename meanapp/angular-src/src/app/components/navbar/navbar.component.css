@@ -1,0 +1,21 @@
+.navbar{
+    background-color: #747171;
+}
+
+a{
+    color: rgb(44, 48, 47);
+}
+
+ul{
+    color: rgb(44, 48, 47);
+}
+
+a:hover {
+    background-color: #111;
+    color: aliceblue;
+}
+
+li a:hover {
+    background-color: #111;
+    color: aliceblue;
+}

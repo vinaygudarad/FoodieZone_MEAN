@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact form</title>
+	<style>
+		body{
+			margin:0;
+			padding: 0;
+			text-align: center;
+			background: url('contact.jpg');
+			background-size:cover;
+			font-family: sans-serif;
+
+		}
+
+		.contact-title{
+			margin-top: 100px;
+			color: rgb(0, 0, 0);
+			text-transform: uppercase;
+			transition: all 4s ease-in-out;
+		}
+
+		.contact-title h1{
+			font-size:32px;
+			line-height: 10px;
+		}
+
+		.contact-title h2{
+			font-size: 16px;
+		}
+
+		form{
+			margin-top: 50px;
+			transition: all 4s ease-in-out;
+		}
+
+		.form-control{
+			width: 600px;
+			background: transparent;
+			border:none;
+			outline: none;
+			border-bottom: 1px solid gray;
+			color: rgb(49, 47, 47);
+			font-size: 18px;
+		}
+
+		input{
+			height: 45px;
+		}
+
+		form.submit{
+			background: orange;
+			border-color: transparent;
+			color: rgb(65, 60, 60);
+			font-size: 20px;
+			font-weight: bold;
+			letter-spacing: 2px;
+			height: 50px;
+			margin-top: 20px;
+		}
+
+		form.submit:hover{
+			background-color: #f44336;
+			cursor: pointer;
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+	<div class="contact-title">
+		<h1>FoodieZone</h1>
+		<h2>We are always ready to serve you</h2>
+	</div>
+
+	<div class="contact-form">
+		<form id="contact-form"  method="post">
+		<input type="text" name="name" class="form-control" placeholder="Your Name" required/>
+		<br>
+		<input type="email" name="email" class="form-control" placeholder="Your Email" required/>
+		<br>
+
+		<textarea name="message" class="form-control" placeholder="Message" row="4" required>
+			
+		</textarea><br>
+		<button type="submit" name="submit">SEND MAIL</button>	
+		
+		</form>
+	</div>
+	
+	
+

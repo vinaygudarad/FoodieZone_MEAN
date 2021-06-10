@@ -1,0 +1,26 @@
+.lead{
+	color: aliceblue;
+}
+
+h1{
+	color: rgb(255, 255, 255);
+}
+
+h3{
+	text-align: center;
+	font-size: 40px;
+	color: rgb(57, 57, 59);
+}
+
+.jumbotron{
+	background: url('coffee.jpg');
+	background-size: cover;
+	background-repeat: none;
+	width: 50%;
+	margin-left: 25%;
+	opacity: 0.8;
+	font-size: 30px;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	font-style: oblique;
+}

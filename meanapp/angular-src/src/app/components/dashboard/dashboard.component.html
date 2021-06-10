@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+  <h1 style="color: black; text-align: center;">THE MENU</h1>
+  <h2 style="color: black;text-align: center;">Choose from the list</h2>
+  <hr>
+  <div class= "breakfast">
+    <h2>Breakfast Menu</h2>
+    <img src="assets/idli.jfif" alt="idli and sambhar " height="230" width="300" align="left"  > 
+    <p class="p1" style="font-size: 30px;" >Deliciously Delight Your Taste Buds with Idli and sambhar</p>
+    <h5>One plate consists of: 2 idlis, 1 cup sambhar and 1 cup of coconut chutney!!</h5>
+    <p>
+    <p class="price" data-price="30" style="font-size: 20px;">Price per plate : 30/-</p>
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button" (click)="increment1()">
+        <!-- <img src="assets/plus.png" alt="" /> -->
+        +
+      </button>
+      <input [(ngModel)]='qty1' type="text">
+      <button class="minus-btn" type="button" name="button" (click)="decrement1()">
+        <!-- <img src="assets/minus.png" alt="" /> -->
+        -
+      </button>
+    </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+
+
+    <img src="assets/dosa.jpg" alt="dosa and sambhar" height="250" width="300" align="left"  > 
+    <p class="p1" style="font-size: 30px;" >Satiate your Weekend Hunger Pangs! Try Our Delicious Dosa </p>
+    <h5>Content : Dosa with some great Chutney!!</h5>
+    <p class="price" data-price="40" style="font-size: 20px;">Price per plate : 40/-</p>
+
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button" (click)="increment2()">
+        <!-- <img src="assets/plus.png" alt="" /> -->
+        +
+      </button>
+      <input [(ngModel)]='qty2' type="text">
+      <button class="minus-btn" type="button" name="button" (click)="decrement2()">
+        <!-- <img src="assets/minus.png" alt="" /> -->
+        -
+      </button>
+    </div>
+
+    
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <div class= "North-Indian">
+    <h2>North Indian Thali</h2>
+    <img src="assets/north.jfif" alt="north indian thali" height="230" width="300" align="left"  > 
+    <p class="p1" style="font-size: 30px;" >A delicious way to sample lots of Flavours!!</p>
+    <h5>Includes: Plain Naan, Dhal makhani, Palak Paneer, Biryani Rice </h5>
+    <p class="price" data-price="100" style="font-size: 20px;">Price per plate : 100/-</p>
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button" (click)="increment3()">
+        <!-- <img src="assets/plus.png" alt="" /> -->
+        +
+      </button>
+      <input [(ngModel)]='qty3' type="text">
+      <button class="minus-btn" type="button" name="button" (click)="decrement3()">
+        <!-- <img src="assets/minus.png" alt="" /> -->
+        -
+      </button>
+    </div>
+
+  </div>
+
+  <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+  <div class= "South-Indian">
+    <h2>South Indian Thali</h2>
+    <img src="assets/south.jfif" alt="south indian thali" height="230" width="300" align="left"  > 
+    <p class="p1" style="font-size: 30px;" >Celebrate and Enjoy our special traditional South Indian Thali </p>
+    <h5>Includes: 3 curries, rice, Indian salad, raita, pappadum!! </h5>
+    <p class="price" data-price="120" style="font-size: 20px;">Price per plate : 120/-</p>
+    
+
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button" (click)="increment4()">
+        <!-- <img src="assets/plus.png" alt="" /> -->
+        +
+      </button>
+      <input [(ngModel)]='qty4' type="text">
+      <button class="minus-btn" type="button" name="button" (click)="decrement4()">
+        <!-- <img src="assets/minus.png" alt="" /> -->
+        -
+      </button>
+    </div>
+
+  </div>
+
+  <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+  <div class= "Snacks">
+    <h2>Snacks</h2>
+    <img src="assets/pizza.jfif" alt="pizza" height="230" width="300" align="left"  > 
+    <p class="p1" style="font-size: 30px;" >You can always count on Pizza!!!</p>
+    <h4>You can  select from variety of flavours all at the same price!!</h4>
+    <p class="price" data-price="100" style="font-size: 20px;">Price:100/-</p>
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button" (click)="increment5()">
+        <!-- <img src="assets/plus.png" alt="" /> -->
+        +
+      </button>
+      <input [(ngModel)]='qty5' type="text">
+      <button class="minus-btn" type="button" name="button" (click)="decrement5()">
+        <!-- <img src="assets/minus.png" alt="" /> -->
+        -
+      </button>
+    </div>
+
+  </div>
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+  <div class= "Desserts">
+    <h2>Dessert Times</h2>
+    <img src="assets/ice_cream.jfif" alt="ice cream" height="230" width="300" align="left"  > 
+    <p class="p1" style="font-size: 30px;" >GET THE SCOOP!!!</p>
+    <h4>Choose 3 scoops of your choice of flavour!!</h4>
+    <p class="price" data-price="60" style="font-size: 20px;">Price :60/-</p>
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button" (click)="increment6()">
+        <!-- <img src="assets/plus.png" alt="" /> -->
+        +
+      </button>
+      <input [(ngModel)]='qty6' type="text">
+      <button class="minus-btn" type="button" name="button" (click)="decrement6()">
+        <!-- <img src="assets/minus.png" alt="" /> -->
+        -
+      </button>
+    </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!-- <div class= "Desserts">
+  <h2>Dessert Times</h2>
+  <img src="assets/ice_cream.jfif" alt="ice cream" height="230" width="300" align="left"  > 
+  <p class="p1" style="font-size: 30px;" >GET THE SCOOP!!!</p>
+  <h4>Choose 3 scoops of your choice of flavour!!</h4>
+  <p class="price" data-price="60" style="font-size: 20px;">Price :60/-</p>
+  <div>
+    Quantity: <input [(ngModel)]='qty6'  type="text" (keyup)="0"/>
+    <span>Total {{qty6.value * prc6.value}} !</span>
+  </div> -->
+
+
+  <!-- <div class="quantity">
+    <button class="plus-btn" type="button" name="button" (click)="increment()">
+      <img src="assets/plus.png" alt="" />
+    </button>
+    <input [(ngModel)]='qty6' type="text">
+    <button class="minus-btn" type="button" name="button" (click)="decrement()">
+      <img src="assets/minus.png" alt="" />
+    </button>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" (click)="toggleShow()">Review Order</button>
+
+<!-- <div> -->
+  <button class="button" (click)="toggleOrderShow()" >Checkout</button>
+<!-- </div> -->
+
+<!-- The Modal -->
+<div *ngIf="isShown" id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" (click)="toggleShow()">&times;</span>
+      <h2>Your Order</h2>
+    </div>
+    <div class="modal-body">
+    
+      <table id="order">
+        <tr>
+          <th>Food</th>
+          <th>Price</th>
+          <th>Qty</th>
+          <th>Amount</th>
+        </tr>
+
+        <tr>
+          <td>Idli</td>
+          <td>30</td>
+          <td>{{qty1}}</td>
+          <td>{{price1}}</td>
+        </tr>
+
+        <tr>
+          <td>Dosa</td>
+          <td>40</td>
+          <td>{{qty2}}</td>
+          <td>{{price2}}</td>
+        </tr>
+
+        <tr>
+          <td>North-Indian Thali</td>
+          <td>100</td>
+          <td>{{qty3}}</td>
+          <td>{{price3}}</td>
+        </tr>
+        
+        <tr>
+          <td>South-Indian Thali</td>
+          <td>120</td>
+          <td>{{qty4}}</td>
+          <td>{{price4}}</td>
+        </tr>
+
+        <tr>
+          <td>Pizza</td>
+          <td>100</td>
+          <td>{{qty5}}</td>
+          <td>{{price5}}</td>
+        </tr>
+
+        <tr>
+          <td>Ice-cream</td>
+          <td>60</td>
+          <td>{{qty6}}</td>
+          <td>{{price6}}</td>
+        </tr>
+
+        <tr>
+          <td style="font-weight: bold;">Total Amount</td>
+          <td></td>
+          <td></td>
+          <td style="font-weight: bold;">{{result}}</td>
+        </tr>
+      </table>
+    
+    </div>
+    <div class="modal-footer">
+      <h3>FoodieZone</h3>
+    </div>
+  </div>
+
+</div>
+
+
+ <br>
+ <br>
+ <br>
+
+
+
+
+<!-- The Modal -->
+<div *ngIf="isOrderShown" id="myModal1"  class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" (click)="toggleOrderShow()">&times;</span>
+      <h2>Your Order</h2>
+    </div>
+    <div class="modal-body" style="margin-left: 5%; margin-right: 20%;">
+      <div class="contact-form">
+        <form id="contact-form"  method="post">
+        <br>
+        
+        <label>Address</label>
+        <textarea name="Address" class="form-control" placeholder="Address" row="4" required>
+        </textarea>
+        <br>
+        <h4>Mode of Payment</h4>
+        <input type="radio" id="CoD" name="MoP" (click)="toggleShowCard()" value="CoD">
+        <label for="CoD">Cash On Delivery</label><br>
+        
+        <input type="radio" id="Card" name="MoP" (click)="toggleShowCard()" value="Card">
+        <label for="Card">Card</label> 
+
+        <div *ngIf="isCardSelected">
+          
+          <form class="credit-card" style="margin-top: 1%;margin-left: 3%;">
+            <div class="form-header">
+              <h4 class="title">Credit card detail:</h4>
+            </div>
+           
+            <div class="form-body" style="margin-left: 5%;">
+              <!-- Card Number -->
+              <input type="text" class="card-number" placeholder="Card Number">
+           
+              <!-- Date Field -->
+              <div class="date-field"  style="margin-top: 1%;margin-bottom: 1%;">
+                <div class="month">
+                  <select name="Month">
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                    <option value="september">September</option>
+                    <option value="october">October</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                  </select>
+                </div>
+                <div class="year">
+                  <select name="Year">
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2024">2025</option>
+                    <option value="2024">2026</option>
+                  </select>
+                </div>
+              </div>
+           
+              <!-- Card Verification Field -->
+              <div class="card-verification"  style="margin-top: 1%;margin-bottom: 1%;">
+                <div class="cvv-input">
+                  <input type="text" placeholder="CVV">
+                </div>
+                <div class="cvv-details">
+                  <p>3 or 4 digits usually found <br> on the signature strip</p>
+                </div>
+              </div>
+            </div>
+          </form>
+
+
+
+
+
+
+
+        </div>
+
+        </form>
+      </div>
+
+
+
+      <br>
+      <button class="button" style="margin-left: 10%; margin-bottom: 1%;" (click)="totalBill()" >Submit Order</button>
+    </div>
+    <div class="modal-footer">
+      <h3>FoodieZone</h3>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+  <a href="./index.html" class="button1" >Go Back</a>
+
+
+</body>
+</html>
