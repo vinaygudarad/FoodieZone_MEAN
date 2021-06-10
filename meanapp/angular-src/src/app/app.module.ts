@@ -21,6 +21,9 @@ import {AuthService} from './services/auth.service';
 
 import {FlashMessagesModule} from 'angular2-flash-messages';
 import { ContactComponent } from './components/contact/contact.component';
+import { RestaurantComponent } from './components/restaurant/restaurant.component';
+import { CafedashboardComponent } from './components/cafedashboard/cafedashboard.component';
+import { BakerydashboardComponent } from './components/bakerydashboard/bakerydashboard.component';
 
 
 
@@ -31,6 +34,9 @@ const appRoutes: Routes = [
   {path: 'dashboard', component: DashboardComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
+  {path: 'restaurants', component: RestaurantComponent},
+  {path: 'dashboard2', component: CafedashboardComponent},
+  {path: 'dashboard3', component: BakerydashboardComponent},
 
 
 ]
@@ -44,7 +50,10 @@ const appRoutes: Routes = [
     HomeComponent,
     DashboardComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    RestaurantComponent,
+    CafedashboardComponent,
+    BakerydashboardComponent,
     
   ],
   imports: [

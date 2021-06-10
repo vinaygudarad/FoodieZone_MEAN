@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import {FlashMessagesService} from 'angular2-flash-messages';
+import {Router} from '@angular/router';
 
 @Component({
 
@@ -15,7 +16,7 @@ import {FlashMessagesService} from 'angular2-flash-messages';
 export class DashboardComponent {
   
 
-  constructor( private flashMessage1:FlashMessagesService ) { }
+  constructor( private flashMessage1:FlashMessagesService,private router: Router ) { }
     
   isShown: boolean = false ;
   isOrderShown: boolean = false;
@@ -41,7 +42,8 @@ export class DashboardComponent {
     this.result = this.qty1*30 + this.qty2*40 + this.qty3*100 + this.qty4*120 + this.qty5*100 + this.qty6*60;
     this.toggleOrderShow();
     this.flashMessage1.show('Your Order has been placed successfully', {cssClass: 'alert-success', timeout: 7000});
- 
+    this.router.navigate(['/restaurants']);
+
   }
 
   toggleShow() {
