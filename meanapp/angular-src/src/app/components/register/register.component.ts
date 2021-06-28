@@ -25,7 +25,7 @@ name : String;
 username: String;
 email: String;
 password: String;
-
+address: String;
 
   constructor(private validateService: ValidateService, private flashMessage:FlashMessagesService,
   private authService:AuthService,
@@ -40,7 +40,8 @@ password: String;
   name: this.name,
   email: this.email,
   username: this.username,
-  password: this. password
+  password: this. password,
+  address: this.address
   }
 
    // Required Fields
