@@ -18,6 +18,15 @@ export class CafedashboardComponent implements OnInit {
   isOrderShown: boolean = false;
   isCardSelected: boolean = false;
 
+  
+  isqty1: boolean = false;
+  isqty2: boolean = false;
+  isqty3: boolean = false;
+  isqty4: boolean = false;
+  isqty5: boolean = false;
+  isqty6: boolean = false;
+  isqty7: boolean = false;
+
   public qty1:number=0;
   public qty2:number=0;
   public qty3:number=0;
@@ -67,6 +76,7 @@ export class CafedashboardComponent implements OnInit {
 
     increment6(){
       this.qty6=this.qty6+1;
+      this.isqty6=true;
     }
     decrement6(){
       if(this.qty6 > 0)
@@ -75,6 +85,7 @@ export class CafedashboardComponent implements OnInit {
 
     increment5(){
       this.qty5=this.qty5+1;
+      this.isqty5=true;
     }
     decrement5(){
       if(this.qty5 > 0)
@@ -83,6 +94,7 @@ export class CafedashboardComponent implements OnInit {
 
     increment4(){
       this.qty4=this.qty4+1;
+      this.isqty4=true;
     }
     decrement4(){
       if(this.qty4 > 0)
@@ -91,6 +103,7 @@ export class CafedashboardComponent implements OnInit {
 
     increment3(){
       this.qty3=this.qty3+1;
+      this.isqty3=true;
     }
     decrement3(){
       if(this.qty3 > 0)
@@ -99,6 +112,7 @@ export class CafedashboardComponent implements OnInit {
 
     increment2(){
       this.qty2=this.qty2+1;
+      this.isqty2=true;
     }
     decrement2(){
       if(this.qty2 > 0)
@@ -107,6 +121,7 @@ export class CafedashboardComponent implements OnInit {
 
     increment1(){
       this.qty1=this.qty1+1;
+      this.isqty1=true;
     }
     decrement1(){
       if(this.qty1 > 0)
@@ -115,9 +130,9 @@ export class CafedashboardComponent implements OnInit {
 
     increment7(){
       this.qty7=this.qty7+1;
+      this.isqty7=true;
     }
     decrement7(){
       if(this.qty7 > 0)
         this.qty7=this.qty7-1;
-    }
-}
+    }}

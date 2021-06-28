@@ -295,24 +295,11 @@
       <div class="contact-form">
         <form id="contact-form"  method="post">
         <br>
-        
-        <h4>Address</h4>
-        <input type="radio" id="default" name="MoP" (click)="toggleShowAddress()">
-        <label for="CoD">Home(default)</label><br>
-        
-        <input type="radio"  (click)="toggleShowAddress()">
-        <label for="Card">Other</label> 
 
-      <div *ngIf="isAddressShown">
-        <label>Enter the Address</label>
-        <textarea class="form-control" [(ngModel)]='dest' placeholder="Address" row="4" required>
+        <label>Address</label>
+        <textarea name="Address" class="form-control" placeholder="Address" row="4" required>
         </textarea>
-      </div>
         <br>
-
-
-
-
         <h4>Mode of Payment</h4>
         <input type="radio" id="CoD" name="MoP" (click)="toggleShowCard()" value="CoD">
         <label for="CoD">Cash On Delivery</label><br>

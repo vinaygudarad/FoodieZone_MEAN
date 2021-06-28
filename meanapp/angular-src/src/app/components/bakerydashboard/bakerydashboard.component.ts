@@ -18,7 +18,6 @@ export class BakerydashboardComponent implements OnInit {
   isShown: boolean = false ;
   isOrderShown: boolean = false;
   isCardSelected: boolean = false;
-  isAddressShown:boolean = false;
 
   isqty1: boolean = false;
   isqty2: boolean = false;
@@ -50,12 +49,10 @@ export class BakerydashboardComponent implements OnInit {
   public result:number;
 
   totalBill(){
-    if(this.dest === "vidyanagar")
-        this.totTime=20;
+    
     this.result = this.qty1*70 + this.qty2*100 + this.qty3*25 + this.qty4*60 + this.qty5*90 + this.qty6*20 + this.qty7*35;
     this.toggleOrderShow();
     this.flashMessage1.show('Your Order has been placed successfully', {cssClass: 'alert-success', timeout: 7000});
-    this.flashMessage1.show('Your Order will be delivered in ' + this.totTime + ' minutes', {cssClass: 'alert-success', timeout: 7000});
     this.router.navigate(['/restaurants']);
   }
 
@@ -73,10 +70,6 @@ export class BakerydashboardComponent implements OnInit {
     
     }
 
-    toggleShowAddress(){
-      
-      this.isAddressShown = !this.isAddressShown;
-    }
     toggleOrderShow(){
       this.isOrderShown = !this.isOrderShown;
     }

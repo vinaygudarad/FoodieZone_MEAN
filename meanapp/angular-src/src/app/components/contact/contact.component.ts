@@ -3,7 +3,7 @@ import {FlashMessagesService} from 'angular2-flash-messages';
 import {Router} from '@angular/router';
 import { HttpHeaders } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
-import { Http } from '@angular/http';
+
 
 @Component({
   selector: 'app-contact',
@@ -14,7 +14,7 @@ export class ContactComponent implements OnInit {
  
 
   constructor( private flashMessage:FlashMessagesService,
-    private router: Router,private http:Http) { }
+    private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -24,17 +24,4 @@ export class ContactComponent implements OnInit {
     this.router.navigate(['/']);
   }
 
-  onSubmit(contactForm: NgForm) {
-    if (contactForm.valid) {
-      const email = contactForm.value;
-      const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-      this.http.post('https://formspree.io/f/mbjqydol',
-        { name: email.name, replyto: email.email, message: email.messages },
-        { 'headers': headers }).subscribe(
-          response => {
-            console.log(response);
-          }
-        );
-    }
-  }
 }
